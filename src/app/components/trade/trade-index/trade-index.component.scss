@@ -1,0 +1,231 @@
+.trade-container {
+    .row > * {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .form-table-side > * {
+        padding-left: 8px;
+        padding-right: 0px;
+    }
+
+    .form-table-side > .col-lg-6:nth-child(2)  {
+        padding-right: 8px;
+    }
+
+    .tr-selected {
+        background: #584f69;
+        border: solid 1px #7400c9;
+        border-radius: 10px;
+    
+        td {
+            color: white;
+        }
+    }
+    
+    .panel {
+        position: relative;
+        padding: 0px 8px;
+        background: linear-gradient(
+            90deg, 
+            rgba(151, 0, 209, 0.5) 0%, 
+            #de00dcad 0%, 
+            #de00dcad 50%, 
+            rgb(64 48 92) 100%
+        );
+        // background-size: 400% 400%;
+        // animation: gradient 5s ease infinite;
+    }
+
+    .orders,
+    .trades {
+        height: 300px;
+    }
+    
+    .radio-wrapper {
+        grid-gap: unset !important;
+        grid-gap: unset !important;
+        gap: unset !important;
+        flex-direction: unset !important;
+        display: flex;
+        flex-wrap: wrap;
+        .radio-btn {
+            min-width: unset !important;
+            flex: 1 1 40%;
+            margin: 5px;
+
+            div {
+                padding: 2px;
+            }
+        }
+    }
+
+    .input-spinner {
+        min-width: unset !important;
+
+        button,
+        input {
+            height: 30px !important;
+            padding: 1px 5px;
+        }
+    }
+
+    .vstack {
+        div {
+            color: #d8d7c8;
+        }
+
+        button {
+            width: 100%;
+            min-width: unset !important;
+            height: 30px;
+            line-height: 15px;
+        }
+    }
+
+    .form-input-search {
+        svg {
+            top: 8px !important;
+        }
+        input {
+            padding: 5px;
+            padding-left: 30px;
+            height: 30px;
+            min-height: unset !important;
+            font-size: 14px;
+        }
+    }
+
+    .markets {
+        height: 480px;
+    }
+
+    .chart-strip {
+        .options {
+            width: calc(100% - 45px);
+
+            .p-left {
+                display: flex;
+                align-items: center;
+                margin-left: 10px;
+            }
+
+            .p-right {
+                .new-tab {
+                    color: white;
+                    background: green;
+                    cursor: pointer;
+                    padding: 5px;
+                    border-top-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    text-decoration: none;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .currency-logo {
+        width: 21px;
+        margin-right: 5px;
+    }
+
+    .currency-name {
+        margin-bottom: 0px;
+        margin-right: 5px;
+    }
+
+    .chart-currency-info {
+        background:linear-gradient(180deg,#be00d8,#5200c4);
+        border-radius:50%;
+        color:#fff;
+        cursor:pointer;
+        font-size:16px;
+        font-weight:500;
+        height:19px;
+        line-height:19px;
+        text-align:center;
+        width:19px;
+        margin-right: 5px;
+    }
+
+    .chart-changes {
+        background: linear-gradient(
+            90deg, 
+            #de00da4d 0%, 
+            rgba(64, 48, 92, 0.5) 50%, 
+            rgba(64, 48, 92, 0.5) 50%, 
+            #de00da4d 100%);
+        // background-size: 400% 400%;
+        // animation: gradient 5s ease infinite;
+
+        .p-center {
+            display: flex;
+            align-items: center;
+
+            .currency-value {
+                color: white;
+                font-size: 14px;
+                margin-right: 10px;
+            }
+
+            .currency-change {
+                position: relative;
+                margin-right: 15px;
+            }
+
+            .currency-change::before {
+                top: 6px;
+            }
+
+            .currency-labeled-value {
+                div {
+                    font-size: 11px;
+                    line-height: 11px;
+                }
+
+                .currency-value-label {
+                    color: #6c6f87;
+                }
+            }
+        }
+    }
+
+    .table-trades tr.table-success td:first-child:before, 
+    .table-trades tr.table-danger td:first-child:before {
+        left: 1px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .trade-container {
+        .form-table-side > * {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .trade-container {
+        .radio-wrapper {
+            .radio-btn {
+                margin: auto;
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
