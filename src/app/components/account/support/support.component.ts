@@ -59,5 +59,4 @@ export class SupportComponent implements OnInit {
       formData.append('attachments', files);
     }
   }
-
 }
