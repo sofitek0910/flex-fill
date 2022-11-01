@@ -15,5 +15,4 @@ export class TradeComponent implements OnInit {
       this.router.navigate(['/trade/index']);
     } 
   }
-
 }
