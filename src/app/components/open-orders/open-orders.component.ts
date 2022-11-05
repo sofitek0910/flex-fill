@@ -15,5 +15,4 @@ export class OpenOrdersComponent implements OnInit {
       this.router.navigate(['/open-orders/index']);
     } 
   }
-
 }
