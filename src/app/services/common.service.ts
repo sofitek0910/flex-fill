@@ -16,7 +16,7 @@ export class CommonService {
     private http: HttpClient,
     public router: Router
   ) {
-
+    
   }
 
   getServerInfo() {
