@@ -7,7 +7,7 @@ import {Router} from '@angular/router';
   styleUrls: ['./markets.component.scss']
 })
 export class MarketsComponent implements OnInit {
-
+ 
   constructor(private router: Router) { }
 
   ngOnInit(): void {
