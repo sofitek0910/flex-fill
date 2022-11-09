@@ -20,7 +20,6 @@ export class LoginComponent implements OnInit {
 
   userForm!: FormGroup;
   submitted = false;
-
   subs: any;
   loginInfo$: any;
 
